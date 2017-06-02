@@ -2,7 +2,7 @@ FROM ligo/ligo-base:jessie
 
 LABEL name="LALSuite Development Debian Jessie" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      date="20170529" \
+      date="20170602" \
       support="Reference Platform"
 
 # FIXME: this should use the lscsoft-lalsuite-dev meta-package but
@@ -10,6 +10,7 @@ LABEL name="LALSuite Development Debian Jessie" \
 RUN apt-get --assume-yes install autoconf \
       automake \
       bc \
+      ccache \
       doxygen \
       help2man \
       ldas-tools-framecpp-c-dev \
