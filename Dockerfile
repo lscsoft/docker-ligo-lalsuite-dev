@@ -6,4 +6,5 @@ LABEL name="LALSuite Development Enterprise Linux 7" \
       support="Reference Platform"
 
 RUN yum -y install lscsoft-lalsuite-dev \
+      ccache
       glue
