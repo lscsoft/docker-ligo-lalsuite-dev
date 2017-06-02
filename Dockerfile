@@ -1,4 +1,4 @@
-FROM ligo/ligo-base:jessie
+FROM ligo/base:jessie
 
 LABEL name="LALSuite Development Debian Jessie" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
