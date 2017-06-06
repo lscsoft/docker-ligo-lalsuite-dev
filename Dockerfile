@@ -2,7 +2,7 @@ FROM ligo/base:jessie
 
 LABEL name="LALSuite Development Debian Jessie" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      date="20170602" \
+      date="20170605" \
       support="Reference Platform"
 
 # FIXME: this should use the lscsoft-lalsuite-dev meta-package but
@@ -10,6 +10,7 @@ LABEL name="LALSuite Development Debian Jessie" \
 RUN apt-get --assume-yes install autoconf \
       automake \
       bc \
+      build-essential \
       ccache \
       doxygen \
       help2man \
@@ -33,6 +34,7 @@ RUN apt-get --assume-yes install autoconf \
       python-healpy \
       python-numpy \
       python-scipy \
+      git \
       python-shapely \
       python-six \
       swig3.0 \
