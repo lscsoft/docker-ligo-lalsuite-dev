@@ -7,7 +7,7 @@ LABEL name="LALSuite Development Debian Jessie" \
 
 # FIXME: this should use the lscsoft-lalsuite-dev meta-package but
 # that is out of date on Debian and needs to be updated
-RUN apt-get --assume-yes install autoconf \
+RUN apt-get update && apt-get --assume-yes install autoconf \
       automake \
       bc \
       build-essential \
