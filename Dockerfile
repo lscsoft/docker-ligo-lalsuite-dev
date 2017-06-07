@@ -13,6 +13,7 @@ RUN apt-get update && apt-get --assume-yes install autoconf \
       build-essential \
       ccache \
       doxygen \
+      git \
       help2man \
       ldas-tools-framecpp-c-dev \
       libcfitsio-dev \
@@ -34,7 +35,6 @@ RUN apt-get update && apt-get --assume-yes install autoconf \
       python-healpy \
       python-numpy \
       python-scipy \
-      git \
       python-shapely \
       python-six \
       swig3.0 \
