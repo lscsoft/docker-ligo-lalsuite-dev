@@ -2,7 +2,7 @@ FROM ligo/base:jessie
 
 LABEL name="LALSuite Development Debian Jessie" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      date="20170607" \
+      date="20170919" \
       support="Reference Platform"
 
 # FIXME: this should use the lscsoft-lalsuite-dev meta-package but
@@ -12,6 +12,7 @@ RUN apt-get update && apt-get --assume-yes install autoconf \
       bc \
       build-essential \
       ccache \
+      condor \
       doxygen \
       git \
       git-lfs \
