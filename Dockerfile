@@ -2,7 +2,7 @@ FROM ligo/base:jessie
 
 LABEL name="LALSuite Development Debian Jessie" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      date="20170919" \
+      date="20171209" \
       support="Reference Platform"
 
 # FIXME: this should use the lscsoft-lalsuite-dev meta-package but
@@ -41,3 +41,6 @@ RUN apt-get update && apt-get --assume-yes install autoconf \
       python-six \
       swig3.0 \
       texlive
+
+# clear package cache
+RUN rm -rf /var/lib/apt/lists/*
