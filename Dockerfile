@@ -17,3 +17,6 @@ RUN yum -y install ccache \
       git-lfs \
       glue \
       lscsoft-lalsuite-dev
+
+# clear package cache
+RUN yum clean all
