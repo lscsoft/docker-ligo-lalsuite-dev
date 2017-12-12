@@ -2,7 +2,7 @@ FROM ligo/base:el7
 
 LABEL name="LALSuite Development Enterprise Linux 7" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      date="20170606" \
+      date="20171212" \
       support="Reference Platform"
 
 # install development tools and git from IUS
@@ -16,6 +16,9 @@ RUN yum makecache && \
 RUN yum -y install ccache \
       glue \
       lscsoft-lalsuite-dev
+
+# git-lfs post-install
+RUN git lfs install
 
 # clear package cache
 RUN yum clean all
