@@ -2,8 +2,10 @@ FROM ligo/base:el7
 
 LABEL name="LALSuite Development Enterprise Linux 7" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      date="20171212" \
+      date="20180228" \
       support="Reference Platform"
+
+COPY /environment/.rpmmacros /root/.rpmmacros
 
 # install development tools and git from IUS
 RUN yum makecache && \
