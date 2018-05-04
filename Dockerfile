@@ -8,6 +8,10 @@ LABEL name="LALSuite Development - Enterprise Linux 7 (CR)" \
 # enable continuous release repository
 RUN yum-config-manager --enable cr
 
+# enable upstream epel
+RUN yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
+      yum-config-manager --disable lscsoft-epel
+
 # install any updates
 RUN yum groups mark convert && \
       yum makecache && \
