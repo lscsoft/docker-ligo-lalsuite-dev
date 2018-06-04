@@ -2,7 +2,7 @@ FROM ligo/base:jessie
 
 LABEL name="LALSuite Development Debian Jessie" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      date="20180201" \
+      date="20180604" \
       support="Reference Platform"
 
 # FIXME: this should use the lscsoft-lalsuite-dev meta-package but
@@ -35,6 +35,7 @@ RUN apt-get update && apt-get --assume-yes install autoconf \
       python-glue \
       python-h5py \
       python-healpy \
+      python-ligo-segments \
       python-numpy \
       python-reproject \
       python-scipy \
