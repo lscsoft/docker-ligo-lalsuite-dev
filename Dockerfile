@@ -27,7 +27,8 @@ RUN yum -y groups install "Development Tools" && \
 # install lalsuite dependencies
 RUN yum -y install ccache \
       ligo-gracedb \
-      lscsoft-lalsuite-dev
+      lscsoft-lalsuite-dev \
+      rpmlint
 
 # git-lfs post-install
 RUN git lfs install
