@@ -2,7 +2,7 @@ FROM ligo/base:el7
 
 LABEL name="LALSuite Development - Enterprise Linux 7 (CR)" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      date="20180503" \
+      date="20180611" \
       support="Best Effort"
 
 # enable continuous release repository
@@ -26,7 +26,6 @@ RUN yum -y groups install "Development Tools" && \
 
 # install lalsuite dependencies
 RUN yum -y install ccache \
-      glue \
       ligo-gracedb \
       lscsoft-lalsuite-dev
 
