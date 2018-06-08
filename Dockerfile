@@ -2,7 +2,7 @@ FROM ligo/base:el7
 
 LABEL name="LALSuite Development - Enterprise Linux 7" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      date="20180311" \
+      date="2018608" \
       support="Reference Platform"
 
 COPY /environment/.rpmmacros /root/.rpmmacros
@@ -16,7 +16,6 @@ RUN yum makecache && \
 
 # install lalsuite dependencies
 RUN yum -y install ccache \
-      glue \
       ligo-gracedb \
       lscsoft-lalsuite-dev
 
