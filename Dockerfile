@@ -1,8 +1,8 @@
-FROM ligo/base:el7
+FROM ligo/base:sl7
 
-LABEL name="LALSuite Development - Enterprise Linux 7" \
+LABEL name="LALSuite Development - Scientific Linux 7" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      date="20180311" \
+      date="20180611" \
       support="Reference Platform"
 
 COPY /environment/.rpmmacros /root/.rpmmacros
