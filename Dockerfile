@@ -42,10 +42,8 @@ RUN apt-get update && apt-get --assume-yes install autoconf \
       python-shapely \
       python-six \
       swig3.0 \
-      texlive
+      texlive \
+      && rm -rf /var/lib/apt/lists/*
 
 # git-lfs post-install
 RUN git lfs install
-
-# clear package cache
-RUN rm -rf /var/lib/apt/lists/*
