@@ -1,7 +1,7 @@
 image: docker:latest
 
 variables:
-  LALSUITE_DEV_REPOSITORY: 'cgca/lalsuite-dev'
+  LALSUITE_DEV_REPOSITORY: 'igwn/lalsuite-dev'
 
 stages:
   - docker
