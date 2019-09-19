@@ -5,7 +5,6 @@ variables:
 
 stages:
   - docker
-  - rebuild
 
 docker:build:
   stage: docker
