@@ -10,9 +10,7 @@ COPY /environment/.rpmmacros /root/.rpmmacros
 # install development tools and git from IUS
 RUN yum makecache && \
       yum groups mark convert && \
-      yum -y groups install "Development Tools" && \
-      yum -y remove git && \
-      yum -y install git2u
+      yum -y groups install "Development Tools"
 
 # install lalsuite dependencies
 RUN yum -y install ccache \
