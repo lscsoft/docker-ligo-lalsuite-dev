@@ -29,14 +29,6 @@ docker:build:
 
 # lalsuite-dev-clang
 
-rebuild:lalsuite-dev-clang:7:
-  stage: rebuild
-  only:
-    - branches@docker/lalsuite-dev
-  trigger:
-    project: docker/lalsuite-dev-clang
-    branch: '7'
-
 rebuild:lalsuite-dev-clang:8:
   stage: rebuild
   only:
