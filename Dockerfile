@@ -10,15 +10,9 @@ RUN apt-get update && apt-get --assume-yes install \
       ccache \
       devscripts \
       git-lfs \
-      help2man \
       lscsoft-lalsuite-dev \
-      python-all-dev \
-      python-ligo-gracedb \
       python-ligo-lw \
-      python3-all-dev \
-      python3-ligo-gracedb \
-      python3-ligo-lw \
-      swig3.0
+      python3-ligo-lw
 
 # git-lfs post-install
 RUN git lfs install
