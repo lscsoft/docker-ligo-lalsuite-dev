@@ -15,8 +15,6 @@ RUN yum makecache && \
 # install lalsuite dependencies
 RUN yum -y install ccache \
       git-lfs \
-      glue \
-      ligo-gracedb \
       lscsoft-lalsuite-dev \
       rpmlint
 
