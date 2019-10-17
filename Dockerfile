@@ -7,7 +7,7 @@ LABEL name="LALSuite Development - Enterprise Linux 7 - Testing" \
 # setup rpm macros
 COPY /environment/.rpmmacros /root/.rpmmacros
 
-# install development tools and git from IUS
+# install development tools
 RUN yum makecache && \
       yum groups mark convert && \
       yum -y groups install "Development Tools"
