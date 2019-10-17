@@ -16,6 +16,7 @@ RUN yum makecache && \
 RUN yum -y install ccache \
       git-lfs \
       lscsoft-lalsuite-dev \
+      python-ligo-lw \
       rpmlint
 
 # git-lfs post-install
