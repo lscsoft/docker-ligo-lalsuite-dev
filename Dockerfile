@@ -5,7 +5,8 @@ LABEL name="LALSuite Development - Debian Buster" \
       support="Unsupported"
 
 # install lalsuite-dependencies
-RUN apt-get update && apt-get --assume-yes install \
+RUN apt-get update && \
+    apt-get --assume-yes install \
       build-essential \
       ccache \
       devscripts \
@@ -18,10 +19,8 @@ RUN apt-get update && apt-get --assume-yes install \
       python3-all-dev \
       python3-ligo-gracedb \
       python3-ligo-lw \
-      swig3.0
+      swig3.0 && \
+    apt-get clean
 
 # git-lfs post-install
 RUN git lfs install
-
-# clear package cache
-RUN rm -rf /var/lib/apt/lists/*
