@@ -8,19 +8,17 @@ LABEL name="LALSuite Development - Enterprise Linux 7 - Testing" \
 COPY /environment/.rpmmacros /root/.rpmmacros
 
 # install development tools
-RUN yum makecache && \
-      yum groups mark convert && \
-      yum -y groups install "Development Tools"
+RUN yum groups mark convert && \
+    yum -y groups install "Development Tools" && \
+    yum clean all
 
 # install lalsuite dependencies
 RUN yum -y install ccache \
       git-lfs \
       lscsoft-lalsuite-dev \
       python-ligo-lw \
-      rpmlint
+      rpmlint && \
+    yum clean all
 
 # git-lfs post-install
 RUN git lfs install
-
-# clear package cache
-RUN yum clean all
