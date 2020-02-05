@@ -11,15 +11,9 @@ RUN apt-get update && \
       ccache \
       devscripts \
       git-lfs \
-      help2man \
       lscsoft-lalsuite-dev \
-      python-all-dev \
-      python-ligo-gracedb \
       python-ligo-lw \
-      python3-all-dev \
-      python3-ligo-gracedb \
-      python3-ligo-lw \
-      swig3.0 && \
+      python3-ligo-lw && \
     apt-get clean
 
 # git-lfs post-install
