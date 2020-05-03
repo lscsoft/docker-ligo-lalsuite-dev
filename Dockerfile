@@ -1,4 +1,4 @@
-FROM containers.ligo.org/docker/base:buster
+FROM igwn/base:buster
 
 LABEL name="LALSuite Development - Debian Buster" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
