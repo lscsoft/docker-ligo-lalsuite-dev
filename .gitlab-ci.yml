@@ -69,4 +69,4 @@ rebuild:lalsuite-dev-gcc:7:
     - branches@docker/lalsuite-dev
   trigger:
     project: docker/lalsuite-dev-gcc
-    branch: 7
+    branch: '7'
