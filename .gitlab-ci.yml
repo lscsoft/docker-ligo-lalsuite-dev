@@ -60,3 +60,13 @@ rebuild:lalsuite-dev-clang:dev:
   trigger:
     project: docker/lalsuite-dev-clang
     branch: dev
+
+# lalsuite-dev-gcc
+
+rebuild:lalsuite-dev-gcc:7:
+  stage: rebuild
+  only:
+    - branches@docker/lalsuite-dev
+  trigger:
+    project: docker/lalsuite-dev-gcc
+    branch: 7
