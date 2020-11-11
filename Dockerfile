@@ -1,4 +1,4 @@
-FROM igwn/base:stretch
+FROM containers.ligo.org/docker/base:stretch
 
 LABEL name="LALSuite Development - Debian Stretch" \
       maintainer="Adam Mercer <adam.mercer@ligo.org>" \
