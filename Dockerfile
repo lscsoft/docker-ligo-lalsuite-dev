@@ -1,8 +1,8 @@
-FROM containers.ligo.org/docker/base:stretch-proposed
+FROM igwn/base:stretch-proposed
 
-LABEL name="LALSuite Development - Debian Stretch - Proposed" \
-      maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      support="Reference Platform"
+LABEL name="LALSuite Development - Debian Stretch - Proposed"
+LABEL maintainer="Adam Mercer <adam.mercer@ligo.org>"
+LABEL support="Reference Platform"
 
 # install lalsuite-dependencies
 RUN apt-get update && \
