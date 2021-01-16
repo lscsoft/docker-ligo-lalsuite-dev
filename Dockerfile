@@ -1,8 +1,8 @@
-FROM containers.ligo.org/docker/base:el7-testing
+FROM igwn/base:el7-testing
 
-LABEL name="LALSuite Development - Enterprise Linux 7 - Testing" \
-      maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      support="Reference Platform"
+LABEL name="LALSuite Development - Enterprise Linux 7 - Testing"
+LABEL maintainer="Adam Mercer <adam.mercer@ligo.org>"
+LABEL support="Reference Platform"
 
 # setup rpm macros
 COPY /environment/.rpmmacros /root/.rpmmacros
