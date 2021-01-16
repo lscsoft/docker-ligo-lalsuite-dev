@@ -1,8 +1,8 @@
-FROM containers.ligo.org/docker/base:buster
+FROM igwn/base:buster
 
-LABEL name="LALSuite Development - Debian Buster" \
-      maintainer="Adam Mercer <adam.mercer@ligo.org>" \
-      support="Unsupported"
+LABEL name="LALSuite Development - Debian Buster"
+LABEL maintainer="Adam Mercer <adam.mercer@ligo.org>"
+LABEL support="Unsupported"
 
 # install lalsuite-dependencies
 RUN apt-get update && \
