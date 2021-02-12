@@ -17,6 +17,7 @@ RUN yum -y install ccache \
       git-lfs \
       lscsoft-lalsuite-dev \
       python-ligo-lw \
+      python3-ligo-lw \
       rpmlint && \
     yum clean all
 
