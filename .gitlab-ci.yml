@@ -53,6 +53,14 @@ rebuild:lalsuite-dev-clang:11:
     project: docker/lalsuite-dev-clang
     branch: '11'
 
+rebuild:lalsuite-dev-clang:12:
+  stage: rebuild
+  only:
+    - branches@docker/lalsuite-dev
+  trigger:
+    project: docker/lalsuite-dev-clang
+    branch: '12'
+
 rebuild:lalsuite-dev-clang:dev:
   stage: rebuild
   only:
